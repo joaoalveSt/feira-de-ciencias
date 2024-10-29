@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    -webkit-font-somothing: antialiased;
+}
+
+:root {
+    --Bg-Color: #f4f6fa;
+    --purble:#a729f5;
+    --prinary-text-color: #313151;
+    --secondery-text-color:#626c7f; 
+    --buton-Bg:#ffffff;
+    --shadow: 8px 16px 40px 0px rgba(143, 168, 193, 0.14);
+    --Bg-assesibilidade: #f6e7ff;
+    --white: #ffffff;
+    --Bg-mobile: url(assets/images/pattern-background-mobile-light.svg);
+}
+
+body {
+    height: 108svb;
+    background: var(--Bg-mobile) var(--Bg-Color);
+    background-size: cover;
+}
+
+header {
+    padding: 16px 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.tema {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.tema img{
+    width: 16px;
+}
+.tema button {
+    height: 20px;
+    width: 32px;
+    background: var(--purble);
+    border: 0;
+    border-radius: 999px;
+    padding: 4px;
+}
+
+.tema button div {
+    background: var(--white);
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+
+}
+
+main {
+    padding: 32px 24px;
+
+
+}
+
+.Boas_Vindas {
+    margin-bottom: 40px;
+}
+
+main h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--prinary-text-color);
+}
+main h1 strong {
+    font-weight: 500;
+}
+
+.Boas_Vindas p {
+    color: var(--prinary-text-color);
+    font-size: 14px;
+    line-height: 150%;
+    font-style: italic;
+}
+.assuntos {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.assuntos button {
+    border: none;
+    background: var(--buton-Bg);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--prinary-text-color);
+}
+.assuntos button div{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.assuntos button img{
+    width: 100%;
+}
+.assuntos div {
+    background: var(--Bg-assesibilidade);
+}
